@@ -257,22 +257,14 @@ const cursor=document.getElementById('cursor'),ring=document.getElementById('cur
 let mx=0,my=0,rx=0,ry=0;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx+'px';cursor.style.top=my+'px';});
 (function loop(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop);})();
-document.querySelectorAll('a,button').forEach(el=>{
-  el.addEventListener('mouseenter',()=>document.body.classList.add('hovering'));
-  el.addEventListener('mouseleave',()=>document.body.classList.remove('hovering'));
-});
-
+document.querySelectorAll('a,button').forEach(el=>{el.addEventListener('mouseenter',()=>document.body.classList.add('hovering'));el.addEventListener('mouseleave',()=>document.body.classList.remove('hovering'));});
 // NAV SCROLL
 const nav=document.getElementById('main-nav');
 window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60),{passive:true});
-
 // SCROLL REVEAL
-const io=new IntersectionObserver(entries=>entries.forEach(e=>{
-  if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}
-}),{threshold:.1});
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}}),{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-// FORMSPREE — ID assembled at runtime, not visible as plain text in source
+// FORMSPREE — ID assembled at runtime
 (function(){
   var p=['x','o','j','p','l','g','o','b'];
   var ep=p.join('');
@@ -282,26 +274,13 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   form.addEventListener('submit',async function(e){
     e.preventDefault();
     var btn=form.querySelector('.form-submit');
-    btn.querySelector('span').textContent='Sending\u2026';
+    btn.querySelector('span').textContent='Sending…';
     btn.disabled=true;
     try{
-      var res=await fetch('https://formspree.io/f/'+ep,{
-        method:'POST',
-        body:new FormData(form),
-        headers:{'Accept':'application/json'}
-      });
-      if(res.ok){
-        form.reset();
-        success.style.display='block';
-        btn.querySelector('span').textContent='Sent \u2713';
-      } else {
-        btn.querySelector('span').textContent='Try Again';
-        btn.disabled=false;
-      }
-    } catch(err){
-      btn.querySelector('span').textContent='Try Again';
-      btn.disabled=false;
-    }
+      var res=await fetch('https://formspree.io/f/'+ep,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+      if(res.ok){form.reset();success.style.display='block';btn.querySelector('span').textContent='Sent ✓';}
+      else{btn.querySelector('span').textContent='Try Again';btn.disabled=false;}
+    }catch{btn.querySelector('span').textContent='Try Again';btn.disabled=false;}
   });
 })();
 </script>
