@@ -7,6 +7,7 @@
     { "src": "/about", "dest": "/about.html" },
     { "src": "/contact", "dest": "/contact.html" },
     { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
-    { "src": "/robots.txt", "dest": "/robots.txt" }
+    { "src": "/robots.txt", "dest": "/robots.txt" },
+    { "src": "/google0c3966acbdec0a96.html", "dest": "/google0c3966acbdec0a96.html" }
   ]
 }
