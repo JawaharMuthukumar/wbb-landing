@@ -1,4 +1,57 @@
+# =============================================
+# robots.txt — White Black Box (whiteblackbox.in)
+# AI Search Visibility Optimized
+# =============================================
+
 User-agent: *
 Allow: /
 
+# OpenAI — ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic — Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Google — Gemini / Vertex AI
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Microsoft — Copilot / Bing
+User-agent: Bingbot
+Allow: /
+
+# Apple — Siri / Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# xAI — Grok
+User-agent: Grok
+Allow: /
+
+# Sitemap
 Sitemap: https://www.whiteblackbox.in/sitemap.xml
