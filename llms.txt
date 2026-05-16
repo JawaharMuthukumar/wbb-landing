@@ -1,0 +1,50 @@
+# White Black Box (WBB.)
+
+> WBB. White Black Box is a software development studio based in Coimbatore,
+> Tamil Nadu, India. We build websites, AI-powered apps, micro-SaaS products,
+> and white-label software for founders and businesses worldwide.
+
+## What We Do
+
+White Black Box offers two delivery models:
+- **White Side**: Products built and launched publicly under the WBB. brand.
+- **Black Side**: Fully white-label builds — no WBB branding, full IP transfer
+  to the client. Ideal for agencies and founders who want a silent tech partner.
+
+## Services
+
+- **Website Development** — Fast, responsive, conversion-driven websites built
+  with modern stacks.
+- **Mobile & AI Apps** — Cross-platform mobile apps with AI integration, built
+  to scale.
+- **Landing Pages** — High-converting pages delivered in 5–7 days.
+- **Micro-SaaS Development** — Focused software products from idea to launch.
+- **Custom Software** — Internal tools, automations, dashboards, and APIs.
+- **White-label Software** — Full invisible builds for agencies and resellers.
+
+## Who We Serve
+
+Startup founders, solo entrepreneurs, product managers, personal brands,
+and global businesses. Clients across India, the UK, the US, and the EU.
+
+## Why Choose WBB.
+
+- India-based studio with global delivery — quality without the agency price tag
+- AI-integrated by default in every product
+- Founder-led: you talk directly to the people building your product
+- White-label ready with full IP rights and zero trace of WBB.
+- 100% on-time delivery with milestone-based transparency
+
+## Key Pages
+
+- [Home](https://www.whiteblackbox.in/)
+- [Services](https://www.whiteblackbox.in/services)
+- [About](https://www.whiteblackbox.in/about)
+- [Blog](https://www.whiteblackbox.in/blog)
+- [Contact / Start a Project](https://www.whiteblackbox.in/contact)
+
+## Contact
+
+- Email: connect@whiteblackbox.in
+- Website: https://www.whiteblackbox.in
+- Location: Coimbatore, Tamil Nadu, India
